@@ -6,3 +6,5 @@ $document.ready(function() {
         $cookies.set('Auth_String', randomString);
         //send the cookie to the server
         $http.post('/api/auth', {auth_string: randomString});
+    });
+});
